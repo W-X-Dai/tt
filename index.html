@@ -1,0 +1,163 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="/favicon.ico"><link rel="stylesheet" href="https://cdn.bootcss.com/material-design-icons/3.0.1/iconfont/material-icons.css"><title>Hcode OnlineJudge</title><script>// IE 10 and earlier
+    if (window.navigator.userAgent.indexOf('MSIE ') > 0 &&
+      window.confirm('Your browser is not supported, click \'OK\' to update')) {
+      window.location = 'http://outdatedbrowser.com'
+    }</script><style>@-webkit-keyframes enter {
+      0% {
+        opacity: 0;
+        top: -10px;
+      }
+
+      5% {
+        opacity: 1;
+        top: 0px;
+      }
+
+      50.9% {
+        opacity: 1;
+        top: 0px;
+      }
+
+      55.9% {
+        opacity: 0;
+        top: 10px;
+      }
+    }
+
+    @keyframes enter {
+      0% {
+        opacity: 0;
+        top: -10px;
+      }
+
+      5% {
+        opacity: 1;
+        top: 0px;
+      }
+
+      50.9% {
+        opacity: 1;
+        top: 0px;
+      }
+
+      55.9% {
+        opacity: 0;
+        top: 10px;
+      }
+    }
+
+    @-moz-keyframes enter {
+      0% {
+        opacity: 0;
+        top: -10px;
+      }
+
+      5% {
+        opacity: 1;
+        top: 0px;
+      }
+
+      50.9% {
+        opacity: 1;
+        top: 0px;
+      }
+
+      55.9% {
+        opacity: 0;
+        top: 10px;
+      }
+    }
+
+    body {
+      background: #f8f8f9;
+    }
+
+    #app-loader {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -27.5px;
+      margin-top: -27.5px;
+    }
+
+    #app-loader .square {
+      background: #2d8cf0;
+      width: 15px;
+      height: 15px;
+      float: left;
+      top: -10px;
+      margin-right: 5px;
+      margin-top: 5px;
+      position: relative;
+      opacity: 0;
+      -webkit-animation: enter 6s infinite;
+      animation: enter 6s infinite;
+    }
+
+    #app-loader .enter {
+      top: 0px;
+      opacity: 1;
+    }
+
+    #app-loader .square:nth-child(1) {
+      -webkit-animation-delay: 1.8s;
+      -moz-animation-delay: 1.8s;
+      animation-delay: 1.8s;
+    }
+
+    #app-loader .square:nth-child(2) {
+      -webkit-animation-delay: 2.1s;
+      -moz-animation-delay: 2.1s;
+      animation-delay: 2.1s;
+    }
+
+    #app-loader .square:nth-child(3) {
+      -webkit-animation-delay: 2.4s;
+      -moz-animation-delay: 2.4s;
+      animation-delay: 2.4s;
+      background: #ff9900;
+    }
+
+    #app-loader .square:nth-child(4) {
+      -webkit-animation-delay: 0.9s;
+      -moz-animation-delay: 0.9s;
+      animation-delay: 0.9s;
+    }
+
+    #app-loader .square:nth-child(5) {
+      -webkit-animation-delay: 1.2s;
+      -moz-animation-delay: 1.2s;
+      animation-delay: 1.2s;
+    }
+
+    #app-loader .square:nth-child(6) {
+      -webkit-animation-delay: 1.5s;
+      -moz-animation-delay: 1.5s;
+      animation-delay: 1.5s;
+    }
+
+    #app-loader .square:nth-child(8) {
+      -webkit-animation-delay: 0.3s;
+      -moz-animation-delay: 0.3s;
+      animation-delay: 0.3s;
+    }
+
+    #app-loader .square:nth-child(9) {
+      -webkit-animation-delay: 0.6s;
+      -moz-animation-delay: 0.6s;
+      animation-delay: 0.6s;
+    }
+
+    #app-loader .clear {
+      clear: both;
+    }
+
+    #app-loader .last {
+      margin-right: 0;
+    }
+
+    #app-loader .loader-content {
+      color: #3498db;
+      font-size: 16px;
+      font-weight: 600;
+    }</style><link href="/assets/css/chunk-123a5c86.6b566c3d.css" rel="prefetch"><link href="/assets/css/chunk-12c95632.56f617d5.css" rel="prefetch"><link href="/assets/css/chunk-12fc8fcf.62b2add5.css" rel="prefetch"><link href="/assets/css/chunk-1a760208.b0b5757e.css" rel="prefetch"><link href="/assets/css/chunk-21732d96.1f6fb654.css" rel="prefetch"><link href="/assets/css/chunk-22ba7762.e0591048.css" rel="prefetch"><link href="/assets/css/chunk-24d4cb18.697d9e6f.css" rel="prefetch"><link href="/assets/css/chunk-2a3753c8.0ecb089e.css" rel="prefetch"><link href="/assets/css/chunk-2dddba72.01966400.css" rel="prefetch"><link href="/assets/css/chunk-4174ac3b.80fd45f0.css" rel="prefetch"><link href="/assets/css/chunk-4693cd96.4581afaf.css" rel="prefetch"><link href="/assets/css/chunk-4b10e546.eac0a445.css" rel="prefetch"><link href="/assets/css/chunk-52251afc.e2d345a1.css" rel="prefetch"><link href="/assets/css/chunk-538a4f5c.1f53e5ba.css" rel="prefetch"><link href="/assets/css/chunk-5cc63cfe.680c1d97.css" rel="prefetch"><link href="/assets/css/chunk-66e00e7b.a21b9c93.css" rel="prefetch"><link href="/assets/css/chunk-756de156.e8780b64.css" rel="prefetch"><link href="/assets/css/chunk-79937758.b3d43316.css" rel="prefetch"><link href="/assets/css/chunk-99ce4a9a.993a56c9.css" rel="prefetch"><link href="/assets/css/chunk-9b2b1d9c.07e8326e.css" rel="prefetch"><link href="/assets/css/chunk-9d802ec6.ec8c8358.css" rel="prefetch"><link href="/assets/css/chunk-cc9cb1b0.103d9970.css" rel="prefetch"><link href="/assets/css/chunk-d2dd4108.8c5dccdf.css" rel="prefetch"><link href="/assets/css/chunk-d949e95a.4e86982e.css" rel="prefetch"><link href="/assets/css/chunk-fe428dca.d6896132.css" rel="prefetch"><link href="/assets/js/chunk-123a5c86.65a859a1.js" rel="prefetch"><link href="/assets/js/chunk-12c95632.17312f00.js" rel="prefetch"><link href="/assets/js/chunk-12fc8fcf.e2bb1291.js" rel="prefetch"><link href="/assets/js/chunk-1a760208.b3220d62.js" rel="prefetch"><link href="/assets/js/chunk-21732d96.facf96be.js" rel="prefetch"><link href="/assets/js/chunk-22ba7762.89127a0a.js" rel="prefetch"><link href="/assets/js/chunk-24d4cb18.3152d43b.js" rel="prefetch"><link href="/assets/js/chunk-2a3753c8.046c4792.js" rel="prefetch"><link href="/assets/js/chunk-2d0afe0f.a4c414a9.js" rel="prefetch"><link href="/assets/js/chunk-2d0d362a.88686c9f.js" rel="prefetch"><link href="/assets/js/chunk-2dddba72.19a0cc59.js" rel="prefetch"><link href="/assets/js/chunk-4174ac3b.cda28b11.js" rel="prefetch"><link href="/assets/js/chunk-4693cd96.4a9081d7.js" rel="prefetch"><link href="/assets/js/chunk-4b10e546.52812cb9.js" rel="prefetch"><link href="/assets/js/chunk-52251afc.b6d56f8d.js" rel="prefetch"><link href="/assets/js/chunk-538a4f5c.78434898.js" rel="prefetch"><link href="/assets/js/chunk-5cc63cfe.fdfeb6ec.js" rel="prefetch"><link href="/assets/js/chunk-66e00e7b.fd505860.js" rel="prefetch"><link href="/assets/js/chunk-74597c67.6813753a.js" rel="prefetch"><link href="/assets/js/chunk-756de156.c627da11.js" rel="prefetch"><link href="/assets/js/chunk-79937758.e32c2429.js" rel="prefetch"><link href="/assets/js/chunk-99ce4a9a.2cdadf4b.js" rel="prefetch"><link href="/assets/js/chunk-9b2b1d9c.8e78efd6.js" rel="prefetch"><link href="/assets/js/chunk-9d802ec6.763b18d0.js" rel="prefetch"><link href="/assets/js/chunk-cc9cb1b0.4aa508b7.js" rel="prefetch"><link href="/assets/js/chunk-d2dd4108.b6852bb0.js" rel="prefetch"><link href="/assets/js/chunk-d949e95a.83b30ab0.js" rel="prefetch"><link href="/assets/js/chunk-fe428dca.866612ab.js" rel="prefetch"><link href="/assets/css/app.16b06411.css" rel="preload" as="style"><link href="/assets/css/chunk-vendors.b286c4b7.css" rel="preload" as="style"><link href="/assets/js/app.e803a421.js" rel="preload" as="script"><link href="/assets/js/chunk-vendors.9cdd596d.js" rel="preload" as="script"><link href="/assets/css/chunk-vendors.b286c4b7.css" rel="stylesheet"><link href="/assets/css/app.16b06411.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but hoj-vue doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><div id="app-loader"><div class="square"></div><div class="square"></div><div class="square last"></div><div class="square clear"></div><div class="square"></div><div class="square last"></div><div class="square clear"></div><div class="square"></div><div class="square last"></div><div class="loader-content"><span>Loading...</span></div></div><script src="/assets/js/chunk-vendors.9cdd596d.js"></script><script src="/assets/js/app.e803a421.js"></script></body></html>
